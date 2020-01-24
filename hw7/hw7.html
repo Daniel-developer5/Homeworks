@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="hw7.css"/>
+        <title>Enter</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="content">Here can be any header...)</div>
+            <div>
+                <span class="enter" onclick="ableModal()">Enter</span>
+            </div>
+        </header>
+        <div id="wrapper">   
+            <div class="modal-window">
+                <div class="img-cont">
+                    <img src="img/user.png" alt="user" class="user"/>
+                </div>
+                <form>
+                    <fieldset>
+                        <img src="img/human.png" alt="human" class="human"/>
+                        <input type="text" placeholder="Username"/>
+                    </fieldset>
+                    <fieldset>
+                        <img src="img/lock.png" alt="password" class="lock"/>
+                        <input type="password" placeholder="Password" id="pass"/>
+                        <img src="img/look.png" alt="look password" class="look" onclick="lookPassword()"/>
+                    </fieldset>
+                    <div class="memory">
+                        <div>
+                            <input type="checkbox" id="check"/>
+                            <label for="check">Remember me</label>
+                        </div>
+                        <div>
+                            <a href="hw7.html">Forgot Password?</a><br>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="close">
+                <img src="img/close.png" alt="close" class="close-img" onclick="ableModal()"/>
+            </div>
+        </div>
+        <div id="notactive"></div>
+        <script src="hw7.js"></script>
+    </body>
+</html>
