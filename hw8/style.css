@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #6de88e, #8ea1ed, #ed85ea, #ede577);
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #a6d2ff;
+}
+
+input {
+    width: 20%;
+    height: 50px;
+    outline: none;
+    border: 1px solid #000;
+    padding: 2px;
+    font-weight: bold;
+}
+
+#math-op {
+    width: 40px;
+    height: 56px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.btn {
+    width: 40px;
+    height: 56px;
+    outline: none;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9fa3ab;
+}
+
+#first.error, #second.error {
+    border: 1px solid #ff0320;
+}
+
+#first.error::-webkit-input-placeholder, 
+#second.error::-webkit-input-placeholder {
+    color: #ff0320;
+}
+
+#result {
+    font-weight: bolder;
+    margin-left: 5px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.animation {
+    animation: bounce 2s;
+}
+
+@keyframes bounce {
+    10% {
+        transform: translateY(-20px);
+    }
+    20% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-18px);
+    }
+    40% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-16px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-14px);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
