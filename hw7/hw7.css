@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff8a30;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    font-family: Snell Roundhand, cursive;
+    font-size: 30px;
+}
+
+.enter {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.enter:hover {
+    background-color: #c75006;
+}
+
+#wrapper {
+    display: none;
+}
+
+#wrapper.active {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-window {
+    padding: 50px;
+    background: linear-gradient(to top left, #5757ff, #a1158c, #e6e03c);
+    border: 2px solid #7de7ff;
+    z-index: 2;
+}
+
+.close {
+    z-index: 2;
+}
+
+.close-img {
+    width: 30px;
+    cursor: pointer;
+    background-color: #7de7ff;
+}
+
+.close-img:hover {
+    background-color: #5d5aed;
+}
+
+.img-cont {
+    margin: 0 0 40px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.user {
+    width: 120px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+    background-color: #e0dad5;
+    margin: 0 0 20px 0;
+    padding: 2px;
+}
+
+input[type="text"], input[ type="password"] {
+    width: 400px;
+    height: 30px;
+    outline: none;
+    background-color: #e0dad5;
+    border: none;
+}
+
+.human {
+    width: 30px;
+}
+
+.lock {
+    width: 30px;
+}
+
+.look {
+    width: 30px;
+    cursor: pointer;
+}
+
+.look:hover {
+    background-color: #a39c96;
+}
+
+.memory{
+    display: flex;
+    justify-content: space-between;
+}
+
+.memory div label {
+    color: #e0dad5;
+}
+
+.memory div a {
+    text-decoration: none;
+    color: #9d9da8;
+    font-family: Snell Roundhand, cursive;
+    font-size: 14px;
+    font-style: oblique;
+}
+
+.memory div a:hover {
+    color: #e0dad5;
+}
+
+.btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    background-color: #575763;
+    opacity: 0.8;
+    color: #ffffff;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+}
+
+button:hover {
+    opacity: 1;
+    border: 1px solid #000000;
+}
+
+#notactive.yes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(163, 163, 168, 0.8);
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-window {
+        padding: 20px 10px 10px 10px;
+    }
+
+    #wrapper.active {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #wrapper.active {
+        justify-content: flex-start;
+    }
+    
+    input[type="text"], input[ type="password"] {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #wrapper.active {
+        justify-content: flex-start;
+        padding: 0;
+    }
+    
+    input[type="text"], input[ type="password"] {
+        width: 300px;
+    }
+}
+
