@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Save-Input-Value</title>
+    </head>
+
+    <body>
+        <form>
+            <input type="text" value="" id="input"/><br>
+            <button id="btn">Print</button>
+        </form>
+        <script>
+            let btn = document.getElementById("btn")
+            
+            btn.addEventListener('click', function() {
+                event.preventDefault()
+                let input = document.getElementById("input").value
+                let div = document.createElement("div")
+                div.innerText = input
+                document.body.appendChild(div)
+            })
+        </script>
+    </body>
+</html>
